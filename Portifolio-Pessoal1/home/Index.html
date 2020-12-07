@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="estilo.css">
+  <!-- Jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <title>Projeto Educacional</title> 
+    
+    <!-- Script -->
+    <script> 
+    	$(document).ready(function(){
+  			$("#mais").click(function(){
+    			$("#mais").hide();
+    			$("#resumo").show();
+  			});
+		});
+</script>
+	</script>
+
+    <!-- Estilo -->
+    <style>
+        .carousel{
+          margin-top: 25px;
+          margin-left: 10%;
+          margin-left: 10%;
+          width: 80%; 
+          height: 351px;
+        }
+        .carousel-inner img {
+          margin-left: 10%;
+          margin-left: 10%;
+          margin-bottom: 0px;
+          width: 80%;  
+          height: 350px;
+        }
+    </style>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>   
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <header><div class="container-fluid pt-3 p-2 bg-success text-white">
+        <h1 class="text-center p-2">Portifolio Pessoal</h1>
+        <!-- Nav -->
+        <ul class="nav nav-pills justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link active" style="background-color: #69e256"href="../home/Index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown" style="background-color: #69e256">
+              <a class="nav-link dropdown-toggle text-white" style="background-color: #69e256" data-toggle="dropdown"     href="#">Preferencias</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="../Preferencias/Musicas/Musicas.html">Musica</a>
+                  <a class="dropdown-item" href="../Preferencias/Games/games.html">Games</a>
+                  <a class="dropdown-item" href="../Preferencias/Filmes/filmes.html">Filmes</a>
+                  <a class="dropdown-item" href="../Preferencias/Animes e Desenhos/Desenhos.html">Animes e Desenhos</a>
+                  <a class="dropdown-item" href="../Preferencias/Esporte/esportes.html">Esporte</a>
+                  <a class="dropdown-item" href="../Preferencias/Viagens/viagens.html">Viagens</a>
+                </div>
+            </li>
+        </ul>
+    </div></header>
+
+    <!-- Conteudo -->
+    <div class="container-fluid" style="margin-top: 40px;">
+      <div class="row">
+        <div class="col-lg-7">
+          <h2 class="text-center p-2">Resumo e Biografia</h2>
+          <p class="text-center p-2">Bem-vindo ao meu portifolio pessoal, cujo o qual publico gostos e preferencias de diversas áreas, como musicas, filmes entre outros, ou até mesmo planos e futuras viagens por exemplo. Sugestões de mais temas em: <a href="../sugestoes/sugestoes.html">Sugestões</a>.</p>
+          <p class="text-center" id="mais" ><a class="text-blue">Saiba mais</a></p>
+          <p class="text-center p-2" id="resumo" style="display: none;">Como um pequeno resumo, saibam que atualmente tenho 16 anos e estudo desenvolvimento de sistemas junto ao ensino medio em uma etec, que é uma área que gosto muito, além de prometer ser muito promissora. Gosto muito de games, escutar musicas e assistir diversos tipos de conteudo, planejar coisas para o futurop tambem é um bom passatempo, mas infelizmente não acontecem as vezes, como nesse ano de pandemia global que destruiu muitos planejamnetos. Espero que goste do conteúdo!!</p>
+        </div>
+        <div class="col-lg-5 mx-auto text-center">
+            <img class="bg-success p-2 img-responsive" src="imgs/avatar.jpg" alt="avatar" width="85%" height="85%">
+        </div>
+      </div>
+    </div>
+
+    <!-- Carrossel -->
+    <div id="imgs_top" class="carousel slide bg-success">
+      <ul class="carousel-indicators">
+        <li data-target="#imgs_top" data-slide-to="0" class="active"></li>
+        <li data-target="#imgs_top" data-slide-to="1"></li>
+        <li data-target="#imgs_top" data-slide-to="2"></li>
+      </ul>
+      <!-- Slides -->
+      <div class="carousel-inner border border-info">
+          <div class="carousel-item active">
+            <img src="imgs/music.jpg" alt="musica" width="100%" height="100%">
+          </div>
+          <div class="carousel-item">
+            <img src="imgs/games.jpg" alt="games" width="100%" height="100%">
+          </div>
+          <div class="carousel-item">
+            <img src="imgs/educ.jpg" alt="educaçao" width="100%" height="100%">
+          </div>
+      </div>
+      <!-- Controles Carrossel -->
+      <a class="carousel-control-prev" href="#imgs_top" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#imgs_top" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+    
+    <!-- Rodape -->
+    <div class="container-fluid pt-3 bg-success text-white" style="margin-top: 25px;">
+      <div class="row">
+        <div class="col-6"><h1>Portifolio Pessoal</h1></div>
+        <div class="col-6 text-right"><p>Feito por: Luiz Henrique <br> Serie: 1AI-DS | Data: 05/12/2020</p></div>
+      </div>
+    </div>
+</body>
+</html>
